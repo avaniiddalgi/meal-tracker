@@ -1,15 +1,28 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-   {{title}}!
-  </h1>
+<div class="container">
+  <div style="text-align:center">
+    <section id ="header">
+      <h1>
+         {{title}}
+      </h1>
+    </section>
+    <div class="row">
+        <div class=" well col-lg-6">
+          <app-result-pane></app-result-pane>
+      </div>
+          <!-- result panel -->
 
+        <div class="col-lg-6">
+          <app-form></app-form>
+        </div>
+          <!-- form to input meal details -->
+
+        <app-footer style="text-align: center;"></app-footer>
+        <!-- footer -->
+
+    </div>
+    <!-- row holding result pane,form and footer ends here -->
+
+  </div>
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
- 
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
 
