@@ -2,26 +2,27 @@
 <div class="container">
   <div style="text-align:center">
     <section id ="header">
-      <h1>
+      <h1 style="color: #ff5d00;">
          {{title}}
       </h1>
     </section>
     <div class="row">
-        <div class=" well col-lg-6">
-          <app-result-pane></app-result-pane>
-      </div>
-          <!-- result panel -->
 
-        <div class="col-lg-6">
+        <div class="col-lg-6 col-md-6 ">
           <app-form></app-form>
         </div>
           <!-- form to input meal details -->
 
-        <app-footer style="text-align: center;"></app-footer>
-        <!-- footer -->
 
+        <div class=" well col-lg-6 col-md-6">
+          <app-result-pane></app-result-pane>
+      </div>
+          <!-- result panel -->
     </div>
-    <!-- row holding result pane,form and footer ends here -->
+    <!-- row holding result pane and form ends here -->
+
+        <app-footer style="text-align: center;color: #ff5d00;"></app-footer>
+        <!-- footer -->
 
   </div>
 </div>
