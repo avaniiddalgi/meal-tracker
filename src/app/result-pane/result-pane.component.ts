@@ -6,10 +6,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./result-pane.component.css']
 })
 export class ResultPaneComponent implements OnInit {
+	foodName: string =[];
+	calories:number;
+	details: string;
 
-  constructor() { }
+  constructor() { 
 
-  ngOnInit() {
   }
 
+  ngOnInit() {
+  	// assigns custom values for the properties
+  	this.foodName =['fish','sukuma'];
+  	this.calories = 120;
+  	this.details = 'it is tasty lots of proteins';
+  }
+  onClick(){
+  	this.foodName.push('sima');
+  	this.calories = 500;
+  }
 }
