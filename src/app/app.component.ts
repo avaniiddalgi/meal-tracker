@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Food} from './food';//imports the nterface of the class food to be used for holding new input data.
 
 @Component({
   selector: 'app-root',

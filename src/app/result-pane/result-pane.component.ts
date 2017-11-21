@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./result-pane.component.css']
 })
 export class ResultPaneComponent implements OnInit {
-	foodName: string =[];
+	foodName: string[];
 	calories:number;
 	details: string;
 
@@ -23,5 +23,6 @@ export class ResultPaneComponent implements OnInit {
   onClick(){
   	this.foodName.push('sima');
   	this.calories = 500;
+  	//this.foodName.unsh
   }
 }
