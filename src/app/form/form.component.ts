@@ -8,8 +8,18 @@ import {Food} from '../food';
 })
 export class FormComponent{
 
-masterFoodsList:Food[]=[]; // contains the master list foods in the array
+/*masterFoodsList:Food[]=[]; // contains the master list foods in the array
 showFood(newFoodFromChild:Food){
     this.masterFoodsList.push(newFoodFromChild);
   }
-}
+
+masterFoodlist:Food[]=[];
+  
+  selectedFood=null;
+
+
+  showDetails(food:Food){
+    this.selectedFood=food;
+  }*/
+  }
+

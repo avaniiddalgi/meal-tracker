@@ -1,16 +1,17 @@
 <h2 style="color: orange;">
 	The List of Meals
 </h2>
-<ul>
-	<li>Food: {{foodName}}</li>
-	<li>Calories: {{calories}}</li>
-	<li>Details: {{details}}</li>
-</ul>
+<div *ngFor="let foodList of childFoodlist">
+	<ul>
+		<li>
+			name: {{foodList.name}}
+			Description:{{foodList.description}}
+			Calories: {{foodList.calories}}
+		</li>
+	</ul>
+</div>
 
-	<div edit>
-		<p (click)="onClick()"> Click here to  Add </p>
-	</div>
-
+<!-- 
 <h3> Edit Meal</h3>
 <form>
 
@@ -28,3 +29,4 @@
 	</div>
 
 </form>
+ -->

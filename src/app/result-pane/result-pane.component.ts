@@ -1,28 +1,26 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, Output, EventEmitter} from '@angular/core';
+import {Food} from '../food';
 
+ 
 @Component({
   selector: 'app-result-pane',
   templateUrl: './result-pane.component.html',
   styleUrls: ['./result-pane.component.css']
 })
-export class ResultPaneComponent implements OnInit {
-	foodName: string[];
-	calories:number;
-	details: string;
+export class ResultPaneComponent{
+	@Input() childFoodlist:Food[];
+  //@Output();
 
-  constructor() { 
+  /*masterFoodlist:Food[]=[];
+  
+  selectedFood=null;
 
+  addFood(foodFromChild:Food){
+    this.masterFoodlist.push(foodFromChild);
   }
 
-  ngOnInit() {
-  	// assigns custom values for the properties
-  	this.foodName =['fish','sukuma'];
-  	this.calories = 120;
-  	this.details = 'it is tasty lots of proteins';
-  }
-  onClick(){
-  	this.foodName.push('sima');
-  	this.calories = 500;
-  	//this.foodName.unsh
-  }
+  showDetails(food:Food){
+    this.selectedFood=food;
+  }*/
+
 }
