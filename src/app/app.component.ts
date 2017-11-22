@@ -11,15 +11,19 @@ export class AppComponent {
 
 
   public masterFoodsList:Food[]=[
+  	//initial elements
   	new Food("ugali","lunch", 343),
-  	new Food("Cereals", "Breakfast", 673),
+  	new Food("Cereals","Breakfast", 673),
   	new Food("Chapati","Supper",188),
   	new Food("Pizza","snack",210)
-  ]; // contains the master list foods in the array
+  ]; 
+
+  	// contains the master list foods in the array
     showDetails(food:Food){
     this.selectedFood=food;
 	}
 
+	// adds food meal items to the list throught the array
 	showFood(newFoodFromChild:Food){
     this.masterFoodsList.push(newFoodFromChild);
   	}

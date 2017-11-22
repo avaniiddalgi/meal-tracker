@@ -1,0 +1,17 @@
+<
+<div *ngIf="childFoodToEdit">
+  <h3>Edit a Meal</h3>
+<!--  form to edit selected items -->
+  <div>
+    <label>Enter Type of Food:</label>
+    <input [(ngModel)]="childFoodToEdit.name">
+  </div>
+  <div>
+    <label>Enter Food Details:</label>
+    <input [(ngModel)]="childFoodToEdit.details">
+  </div>
+  <div>
+    <label>Enter Calorie Count:</label>
+    <input [(ngModel)]="childFoodToEdit.calories">
+    <button (click)="doneClicked()">Done</button>
+  </div>

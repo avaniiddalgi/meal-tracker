@@ -1,17 +1,18 @@
 <h2 style="color: orange;">
 	The List of Meals
 </h2>
-<div *ngFor="let foodList of childFoodlist">
+
+<div *ngFor="let foodList of childFoodlist|filter">
 	<ul>
 		<li>
-			name: {{foodList.name}}
-			Description:{{foodList.description}}
-			Calories: {{foodList.calories}}
+			Food: <span> {{foodList.name}}</span> 
+			Description:  <span> {{foodList.description}} </span> 
+			Calories:  <span> {{foodList.calories}} </span>
 		</li>
 	</ul>
 </div>
 
-<!-- 
+
 <h3> Edit Meal</h3>
 <form>
 
@@ -27,6 +28,9 @@
 		<label for="details">Details: </label><br>
 		<input type="text" [(ngModel)]="details" name="details">
 	</div>
+	<div>
+		<button class="btn btn-success"></button>
+	</div>
+
 
 </form>
- -->

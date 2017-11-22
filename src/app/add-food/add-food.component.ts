@@ -9,11 +9,9 @@ import {Food} from '../food';//imports the nterface of the class food to be used
 export class AddFoodComponent {
   @Output()  addNewFood= new EventEmitter();
 
-//foodList=[];
 addFood(name:string,description:string,calories:number){
   var newFoodObj:Food = new Food(name,description,calories);
   this.addNewFood.emit(newFoodObj);//carries the data to the parent component for display
- // this.foodList.push(newFoodObj);
 }
 
 

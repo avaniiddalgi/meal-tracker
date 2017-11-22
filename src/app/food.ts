@@ -1,7 +1,7 @@
 export class Food {
   constructor(
   public name:string,
-  public descritption:string,
+  public description:string,
   public calories:number
 ){}
 

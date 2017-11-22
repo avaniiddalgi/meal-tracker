@@ -8,6 +8,8 @@ import { FormComponent } from './form/form.component';
 import { FooterComponent } from './footer/footer.component';
 import { ResultPaneComponent } from './result-pane/result-pane.component';
 import { AddFoodComponent } from './add-food/add-food.component';
+import { EditFoodComponent } from './edit-food/edit-food.component';
+import { FilterPipe } from './filter.pipe';
 
 
 @NgModule({
@@ -16,7 +18,9 @@ import { AddFoodComponent } from './add-food/add-food.component';
     FormComponent,
     FooterComponent,
     ResultPaneComponent,
-    AddFoodComponent
+    AddFoodComponent,
+    EditFoodComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,
