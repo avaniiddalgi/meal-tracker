@@ -6,7 +6,7 @@ import { Food } from '../food';
   styleUrls: ['./edit-food.component.css']
 })
 export class EditFoodComponent implements OnInit {
-	@Input() childFoodToEdit: Food;
+	  @Input() foodToEdit: Food;
   	@Output() doneClickedSender = new EventEmitter();
   	doneClicked() {
     this.doneClickedSender.emit();
@@ -19,4 +19,3 @@ export class EditFoodComponent implements OnInit {
   }
 
 }
-

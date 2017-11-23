@@ -7,7 +7,7 @@ import {Food} from '../food';//imports the nterface of the class food to be used
   styleUrls: ['./add-food.component.css']
 })
 export class AddFoodComponent {
-  @Output()  addNewFood= new EventEmitter();
+  @Output()  addNewFood= new EventEmitter();//to  take tye listed food to the sibing component for listing
 
 addFood(name:string,description:string,calories:number){
   var newFoodObj:Food = new Food(name,description,calories);
