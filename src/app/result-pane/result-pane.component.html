@@ -13,7 +13,8 @@
 			Food: <span> {{foodList.name}}</span>
 			Description:  <span> {{foodList.description}} </span>
 			Calories:  <span> {{foodList.calories}} </span>
-			<button (click)="editFoodButton(foodList)">Edit</button>
+			<button class=" btn btn-primary"(click)="editFoodButton(foodList)">Edit</button>
+			<button class="btn btn-danger" (click)="removeFood()" >Delete</button>
 		</li>
 	</ul>
 </div>

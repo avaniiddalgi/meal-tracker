@@ -1,4 +1,4 @@
-<
+
 <div *ngIf="foodToEdit">
   <h3>Edit a Meal</h3>
 <!--  form to edit selected items -->
@@ -12,6 +12,7 @@
   </div>
   <div>
     <label>Enter Calorie Count:</label>
-    <input [(ngModel)]="foodToEdit.calories">
-    <button (click)="doneClicked()">Done</button>
+    <input [(ngModel)]="foodToEdit.calories"><br>
+    <button class="btn btn-success" (click)="doneClicked()" >Save</button>
+    
   </div>

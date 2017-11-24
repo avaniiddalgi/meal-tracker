@@ -3,3 +3,6 @@ input {
 	border:3px;
 	padding-left:20px;
 }
+form {
+	background-color: orange;
+}
