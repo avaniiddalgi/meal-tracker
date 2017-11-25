@@ -24,12 +24,12 @@ export class AppComponent {
     this.masterFoodsList.push(newFoodFromChild);
   }
   //editting the a selected meal in the list
-  selectedFood:Food=null;//no food selected
-  
+  selectedFood:Food=null; //no food selected
+
 
   //shows the food to edit when it is called in the
   showFoodDetailToEdit(food:Food){
-    this.selectedFood=food;
+    this.selectedFood =food;
   }
   // set the food items to unselected
   finishedEditing(){
