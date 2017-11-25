@@ -25,6 +25,7 @@ export class AppComponent {
   }
   //editting the a selected meal in the list
   selectedFood:Food=null;//no food selected
+  
 
   //shows the food to edit when it is called in the
   showFoodDetailToEdit(food:Food){

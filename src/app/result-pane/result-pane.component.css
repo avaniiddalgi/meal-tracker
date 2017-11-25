@@ -1,5 +1,6 @@
-ul li {
+ul  {
 	text-decoration: none;
+	list-style: none;
 }
 span {
 	color: green;

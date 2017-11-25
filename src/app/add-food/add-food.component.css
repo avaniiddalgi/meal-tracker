@@ -6,3 +6,6 @@ input {
 form {
 	background-color: orange;
 }
+button {
+	margin-bottom: 40px;
+}

@@ -7,17 +7,18 @@
 	<option value="low">Low Calories</option>
 </select>
 
-<div *ngFor="let foodList of childFoodlist | filter:caloriesToShow">
-	<ul>
-		<li>
-			Food: <span> {{foodList.name}}</span>
-			Description:  <span> {{foodList.description}} </span>
-			Calories:  <span> {{foodList.calories}} </span>
-			<button class=" btn btn-primary"(click)="editFoodButton(foodList)">Edit</button>
-			<button class="btn btn-danger" (click)="removeFood()" >Delete</button>
-		</li>
-	</ul>
-</div>
+	<div *ngFor="let foodList of childFoodlist | filter:caloriesToShow">
+		<ul>
+			<li>
+				Food: <span> {{foodList.name}}</span>
+				Description:  <span> {{foodList.description}} </span>
+				Calories:  <span> {{foodList.calories}} </span>
+				<button class=" btn btn-primary"(click)="editFoodButton(foodList)">Edit</button>
+				<button class="btn btn-danger" (click)="removeFood()" >Delete</button>
+			</li>
+		</ul>
+	</div>
+
 
 
 <!-- <h3> Edit Meal</h3>
