@@ -1,12 +1,11 @@
 # MealTracker
 
-Meal Tracking Application created with Angular Framework.
-By Kepha Okari
+Meal Tracking Application.
+* By Kepha Okari
 
 ## Description.
 
-This website will allow users to log the food items they eat with details and calorie count for each, in one day, and then see lists of just the food names, showing details and calories upon click, and to view list based on calorie count. The user can also edit their foods.
-
+Asimple application to enable a user to add the meal he or she has in a day track the calories level in each one of them. the can edit the food and its details, delete ,filter to only see high or low calories meals. A user can also add more meals.
 
 ## Set Up and installation requirements.
 
@@ -19,9 +18,13 @@ This website will allow users to log the food items they eat with details and ca
 * run ng serve --open.
 
 ## Technologies Used
-* HTML, CSS, JavaScript, TypeScript, Node.js, Angular.
+* HTML,
+* CSS,
+* JavaScript,
+* TypeScript,
+* Node.js,
+* Angular.
 
 ## License
 
 MIT License.
-Copyright 2017 Kepha Okari
