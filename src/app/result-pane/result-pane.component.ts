@@ -11,6 +11,9 @@ import {Food} from '../food';
 export class ResultPaneComponent{
   	@Input() childFoodlist:Food[];
     @Output() clickSender = new EventEmitter();// activate
+
+
+
     editFoodButton(editSelectFood:Food){
     this.clickSender.emit(editSelectFood);
     }
@@ -18,4 +21,9 @@ export class ResultPaneComponent{
     onChange(optionFromMenu){
       this.caloriesToShow =optionFromMenu;
     }
+        @Output() clickRemove = new EventEmitter();// activate
+        deleteFoodButton(editSelectFood){
+          this.clickRemove.emit(editSelectFood);
+      }
+
   }

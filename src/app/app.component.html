@@ -21,6 +21,7 @@
           <app-result-pane
             [childFoodlist]="masterFoodsList"
             (clickSender)= "showFoodDetailToEdit($event)"
+            (clickRemove)= "deleteFoodButton($event)"
           ></app-result-pane>
 
           <app-edit-food
