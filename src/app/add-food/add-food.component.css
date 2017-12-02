@@ -5,6 +5,7 @@ input {
 }
 form {
 	background-color: orange;
+	border-radius: 10px;
 }
 button {
 	margin-bottom: 40px;
